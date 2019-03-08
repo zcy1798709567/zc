@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zy.project.dao.ProjectDao">
+    <select id="getproject" resultType="com.zy.project.pojo.Project">
+        select * from project
+    </select>
+    <select id="getProjectById" parameterType="java.lang.Integer" resultType="com.zy.project.pojo.Project">
+        select * from project where ps_id=#{ps_id}
+    </select>
+</mapper>
